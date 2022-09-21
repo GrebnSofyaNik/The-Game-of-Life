@@ -1,6 +1,6 @@
 # The-Game-of-Life
 "The Game of Life" virtualization in C
-*** The program src/game_of_life.c was developed in the C programming language, which is a visualization of "The Game of Life". To display graphics, only character (ASCII) graphics were used (with output to the terminal). The game Game of life has an interactive mode, with game speed setting (by changing the delay step). ==***
+***== The program src/game_of_life.c was developed in the C programming language, which is a visualization of "The Game of Life". To display graphics, only character (ASCII) graphics were used (with output to the terminal). The game Game of life has an interactive mode, with game speed setting (by changing the delay step). ==***
 
 * ***Graphic arts***
 
