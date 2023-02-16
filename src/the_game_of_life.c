@@ -49,20 +49,6 @@ int main() {
       refresh();
     }
   }
-  initscr();
-  noecho();
-  nodelay(stdscr, TRUE);
-  while (exitStatus != 1) {
-    clear();
-    usleep(time);
-
-    showTable(table, time);
-    evalute(table, tableNext);
-    copyarray(tableNext, table);
-    clearTable(tableNext);
-    handleInput(&exitStatus, &time);
-    refresh();
-  }
   endwin();
   return 0;
 }
