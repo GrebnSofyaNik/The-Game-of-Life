@@ -14,7 +14,6 @@
 #define MINDELAY 50000
 #define DELAYSTEP 10000
 
-int end_game(int a[M][N], int b[M][N]);
 void clearTable(int table[M][N]);
 void showTable(int table[M][N], int time);
 void evalute(int table[M][N], int tableNext[M][N]);
@@ -34,6 +33,21 @@ int main() {
   input(table);
   if (freopen("/dev/tty", "r", stdin) == NULL) {
     printf("n/a");
+  } else {
+    initscr();
+    noecho();
+    nodelay(stdscr, TRUE);
+    while (exitStatus != 1) {
+      clear();
+      usleep(time);
+
+      showTable(table, time);
+      evalute(table, tableNext);
+      copyarray(tableNext, table);
+      clearTable(tableNext);
+      handleInput(&exitStatus, &time);
+      refresh();
+    }
   }
   initscr();
   noecho();
