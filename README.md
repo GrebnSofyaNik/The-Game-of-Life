@@ -19,4 +19,5 @@ The initialization of the "game" state via stdin is provided. Prepared 10 initia
 * To run the program from terminal use: 
     
     gcc the_game_of_life.c -lncurses -Wall -Werror -Wextra 
+    
     ./a.out < 10.txt   //  (txt file - script number)
