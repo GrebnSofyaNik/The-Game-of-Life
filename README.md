@@ -15,3 +15,8 @@ The initialization of the "game" state via stdin is provided. Prepared 10 initia
 * The game is developed in the C language, in a structural style and works from the terminal;
 
 > When developing the game, I was fully guided by the principles of E. Dijkstra's structured programming.
+
+* To run the program from terminal use: 
+    
+    gcc the_game_of_life.c -lncurses -Wall -Werror -Wextra 
+    ./a.out < 10.txt   //  (txt file - script number)
