@@ -20,4 +20,4 @@ The initialization of the "game" state via stdin is provided. Prepared 10 initia
     
     gcc the_game_of_life.c -lncurses -Wall -Werror -Wextra 
     
-    ./a.out < 10.txt   //  (txt file - script number)
+    ./a.out < 10.txt   //  (where txt file is the script number)
